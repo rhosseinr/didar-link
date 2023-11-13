@@ -2,15 +2,12 @@
 
 import Image from "next/image";
 import SectionTemplate from "./SectionTemplate";
-
-const myLoader = ({ src = "" }) => {
-  return src ? src : "";
-};
+import myLoader from "@/config/Loader";
 
 export const ContactUs = () => {
   return (
     <SectionTemplate color="level4">
-      <div className="flex flex-col justify-center items-center h-full">
+      <div className="text-white flex flex-col justify-center items-center h-full">
         <div className="gap-4 flex flex-col justify-center items-center">
           <Image
             src="/images/mini-logo.png"
@@ -20,9 +17,8 @@ export const ContactUs = () => {
             height={64}
             className="mx-auto"
           />
+          <h2 className="lalezar text-4xl">دیدار‌لینک</h2>
           <p className="font-bold text-center">
-            دیدار‌لینک
-            <br />
             ارائه فناوری قابل اعتماد از سال 1395
           </p>
           <p>Copyright © 1402</p>

@@ -2,10 +2,7 @@
 
 import Image from "next/image";
 import { title, subtitle } from "@/components/primitives";
-
-const myLoader = ({ src = "" }) => {
-  return src ? src : "";
-};
+import myLoader from "@/config/Loader";
 
 export const MainContent = () => {
   return (
@@ -19,13 +16,19 @@ export const MainContent = () => {
           height={128}
           className="mx-auto"
         />
-        <h1 className={title({ size: "lg" })}>دیدار </h1>
-        <h1 className={title({ color: "violet", size: "lg" })}>لینک</h1>
+        <h1 className={title({ color: "blue", size: "lg", font: "lalezar" })}>
+          دیدار{" "}
+        </h1>
+        <h1 className={title({ color: "gray", size: "lg", font: "lalezar" })}>
+          لینک
+        </h1>
         <div className="my-4">
           <h2 className={title()}>
-            حرفه ما ساخت ارتباطی موثر و پویا در کسب و کار شماست
+            خدمات خود را زیبا و با سهولت در دست مشتریان قرار دهید
           </h2>
-          <h3 className={subtitle({ class: "mt-4" })}>زیبا، مدرن و سریع</h3>
+          <h3 className={subtitle({ class: "mt-4 text-orange-600" })}>
+            طراحی اختصاصی - موبایل - وب
+          </h3>
         </div>
       </div>
     </section>

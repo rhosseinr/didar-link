@@ -4,14 +4,11 @@ import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import ThemeChanger from "./ThemeChanger";
-
-const myLoader = ({ src = "" }) => {
-  return src ? src : "";
-};
+import myLoader from "@/config/Loader";
 
 export const Navbar = () => {
   return (
-    <nav className="p-4 bg-neutral-200/50 dark:bg-neutral-950/50 backdrop-blur-md backdrop-saturate-150 sticky top-0 z-10">
+    <nav className="p-4 bg-neutral-200/50 dark:bg-neutral-950/50 backdrop-blur-md backdrop-saturate-150 sticky top-0 z-20">
       <div className="flex justify-between w-full px-4">
         <Link className="flex justify-start items-center gap-1" href="/">
           <Image

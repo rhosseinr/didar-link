@@ -28,6 +28,26 @@ const productList = [
     desktopScreen: "/projects/gemgym-desktop",
     url: "https://www.gemgym.ir",
   },
+  {
+    id: "3",
+    title: "نارسیس",
+    image: "/projects/narcis.png",
+    shortDescription: "حوزه گردشگری",
+    description: "برای دسترسی آسان گردشگران به خدمات اقامتی",
+    mobileScreen: "",
+    desktopScreen: "",
+    url: "https://narcisbnb.com",
+  },
+  {
+    id: "4",
+    title: "صمیم",
+    image: "/projects/samim.png",
+    shortDescription: "حوزه سلامت روان",
+    description: "برای دسترسی آسان به خدمات حوزه سلامت روان",
+    mobileScreen: "",
+    desktopScreen: "",
+    url: "",
+  },
 ];
 
 export const Products = () => {
@@ -39,12 +59,8 @@ export const Products = () => {
 
   return (
     <>
-      <SectionTemplate
-        title="نمونه کار"
-        color="level3"
-        icon="/images/toolbox.svg"
-      >
-        <section className="flex items-center justify-center gap-4">
+      <SectionTemplate title="پروژه‌ها" color="level3">
+        <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {productList.map((item) => (
             <ProductCard
               item={item}
@@ -59,7 +75,7 @@ export const Products = () => {
           <>
             <motion.div
               layoutId={selected.id}
-              className="rounded-xl fixed md:inset-x-24 md:inset-y-12 inset-0 bg-neutral-100 z-20 dark:bg-neutral-800 p-2 shadow-md"
+              className="rounded-xl fixed md:inset-x-24 md:inset-y-12 inset-0 bg-neutral-100 z-30 dark:bg-neutral-800 p-2 shadow-md"
             >
               <motion.div className="p-2 gap-1">
                 <motion.h4 className="text-lg">{selected.title}</motion.h4>

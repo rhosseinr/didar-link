@@ -12,6 +12,10 @@ export default function Home() {
       <Target />
       <Products />
       <ContactUs />
+      <div className="svg-bg-1"></div>
+      <div className="svg-bg-2"></div>
+      <div className="svg-bg-3"></div>
+      <div className="svg-bg-4"></div>
     </>
   );
 }

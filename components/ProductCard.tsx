@@ -2,10 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-
-const myLoader = ({ src = "" }) => {
-  return src ? src : "";
-};
+import myLoader from "@/config/Loader";
 
 export const ProductCard = ({ item, onItemClick }: any) => {
   return (
