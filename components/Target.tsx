@@ -13,7 +13,7 @@ export const Target = () => {
         width={256}
         loader={myLoader}
         height={256}
-        className="mx-auto"
+        className="mx-auto h-64 w-64"
       />
       <div className="flex flex-col gap-4">
         <p>
@@ -25,7 +25,7 @@ export const Target = () => {
           خود را در رضایت شما جستجو می کند. همچنین ما پذیرای ایده های شما هستیم
           تا با نگاه کارشناسی و مهندسی به تحقق آن‌ها جامه عمل بپوشانیم
         </p>
-        <h2 className="mx-auto bg-orange-600 text-white rounded-xl px-8 py-2">
+        <h2 className="mx-auto text-orange-800 border border-orange-800 dark:text-orange-500 dark:border-orange-500 rounded-full px-4 py-1">
           حلقه این ارتباط گم نمی‌شود؛ بزرگتر می‌شود
         </h2>
       </div>

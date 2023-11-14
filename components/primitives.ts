@@ -14,9 +14,9 @@ export const title = tv({
       foreground: "dark:from-[#FFFFFF] dark:to-[#4B4B4B]",
     },
     size: {
-      sm: "text-3xl lg:text-4xl",
-      md: "text-[2.3rem] lg:text-3xl leading-9",
-      lg: "text-4xl lg:text-6xl",
+      sm: "text-2xl lg:text-xl",
+      md: "text-4xl lg:text-3xl leading-9",
+      lg: "text-5xl lg:text-6xl",
     },
     font: {
       lalezar: "lalezar",
@@ -63,10 +63,11 @@ export const section = tv({
   base: "backdrop-blur-md backdrop-saturate-150 py-12 sm:py-24 min-h-screen",
   variants: {
     color: {
-      level1: "level-1 bg-neutral-300/50 dark:bg-neutral-700/50",
-      level2: "level-2 bg-neutral-400/50 dark:bg-neutral-800/50",
-      level3: "level-3 bg-neutral-500/50 dark:bg-neutral-900/50",
-      level4: "level-4 bg-neutral-600/50 dark:bg-neutral-950/50",
+      level1: "level-1 bg-neutral-200/50 dark:bg-neutral-600/50",
+      level2: "level-2 bg-neutral-300/50 dark:bg-neutral-700/50",
+      level3: "level-3 bg-neutral-400/50 dark:bg-neutral-800/50",
+      level4: "level-4 bg-neutral-500/50 dark:bg-neutral-900/50",
+      level5: "level-5 bg-neutral-600/50 dark:bg-neutral-950/50",
     },
   },
   defaultVariants: {

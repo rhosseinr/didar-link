@@ -8,11 +8,11 @@ export const ProductCard = ({ item, onItemClick }: any) => {
   return (
     <motion.div
       layoutId={item.id}
-      className="card bg-neutral-100 dark:bg-neutral-800 rounded-xl p-2 shadow-md"
+      className="card bg-neutral-100 dark:bg-neutral-800 rounded-xl p-2 shadow-sm hover:shadow-md"
       onClick={onItemClick}
     >
       <motion.div className="p-2 gap-1">
-        <motion.h4 className="text-lg">{item.title}</motion.h4>
+        <motion.strong className="text-lg">{item.title}</motion.strong>
         <p className="text-sm">{item.shortDescription}</p>
       </motion.div>
       <figure>

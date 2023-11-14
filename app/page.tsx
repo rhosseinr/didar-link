@@ -3,6 +3,7 @@ import { MainContent } from "@/components/MainContent";
 import { Introduction } from "@/components/Introduction";
 import { Target } from "@/components/Target";
 import { ContactUs } from "@/components/ContactUs";
+import Teams from "@/components/Teams";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Introduction />
       <Target />
       <Products />
+      <Teams />
       <ContactUs />
       <div className="svg-bg-1"></div>
       <div className="svg-bg-2"></div>

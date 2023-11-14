@@ -53,7 +53,7 @@
   background-attachment: fixed !important;
   width: 100%;
   position: fixed;
-  height: 50%;
+  height: 35vh;
   bottom: 0;
   background-position: bottom center !important;
 }
@@ -81,7 +81,8 @@
 .level-1,
 .level-2,
 .level-3,
-.level-4 {
+.level-4,
+.level-5 {
   position: relative;
 }
 
@@ -99,6 +100,10 @@
 
 .level-4 {
   z-index: 9;
+}
+
+.level-5 {
+  z-index: 11;
 }
 
 [data-theme="dark"] .svg-bg-1 {
