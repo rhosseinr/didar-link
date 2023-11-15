@@ -3,6 +3,7 @@
 import Image from "next/image";
 import SectionTemplate from "./SectionTemplate";
 import myLoader from "@/config/Loader";
+import ImageContainer from "./ImageWrapper";
 
 const people = [
   {
@@ -59,13 +60,12 @@ const Teams = () => {
         {people.map((person) => (
           <li key={person.name}>
             <div className="md:h-32 h-48 shadow-sm hover:shadow-md flex-col md:flex-row bg-neutral-200/50 dark:bg-neutral-950/50 rounded-xl p-4 flex items-center gap-4">
-              <Image
+              <ImageContainer
                 className="h-16 w-16 object-cover rounded-full shadow-sm"
                 src={person.imageUrl}
                 alt="avatar"
                 width={64}
                 height={64}
-                loader={myLoader}
               />
               <div>
                 <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900 dark:text-gray-100">

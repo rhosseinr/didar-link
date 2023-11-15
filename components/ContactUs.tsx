@@ -1,8 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import SectionTemplate from "./SectionTemplate";
-import myLoader from "@/config/Loader";
+import ImageContainer from "./ImageWrapper";
 
 const footerLink = [
   { id: "1", title: "Twitter", image: "/images/twitter.svg", link: "#" },
@@ -14,11 +13,10 @@ export const ContactUs = () => {
     <SectionTemplate color="level5">
       <div className="text-white flex flex-col justify-center items-center h-full">
         <div className="gap-4 flex flex-col justify-center items-center">
-          <Image
+          <ImageContainer
             src="/images/mini-logo.png"
             alt="logo"
             width={64}
-            loader={myLoader}
             height={64}
             className="mx-auto h-16 w-16"
           />
@@ -35,11 +33,10 @@ export const ContactUs = () => {
                 key={item.id}
                 className="grayscale hover:grayscale-0 rounded-md p-4"
               >
-                <Image
+                <ImageContainer
                   src={item.image}
                   alt={item.title}
                   width={24}
-                  loader={myLoader}
                   height={24}
                   className="mx-auto h-6 w-6"
                 />

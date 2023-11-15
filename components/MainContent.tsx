@@ -1,18 +1,16 @@
 "use client";
 
-import Image from "next/image";
 import { title, subtitle } from "@/components/primitives";
-import myLoader from "@/config/Loader";
+import ImageContainer from "./ImageWrapper";
 
 export const MainContent = () => {
   return (
     <section className="flex flex-col mx-auto max-w-3xl px-4 items-center gap-2 h-screen">
       <div className="inline-block text-center justify-center">
-        <Image
+        <ImageContainer
           src="/images/logo.png"
           alt="logo"
           width={256}
-          loader={myLoader}
           height={128}
           className="mx-auto w-64 h-32"
         />

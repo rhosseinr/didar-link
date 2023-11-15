@@ -1,7 +1,6 @@
 "use client";
 
-import myLoader from "@/config/Loader";
-import Image from "next/image";
+import ImageContainer from "./ImageWrapper";
 
 const DesktopPreview = ({ image }: any) => {
   return (
@@ -10,20 +9,18 @@ const DesktopPreview = ({ image }: any) => {
         <div className="rounded-md overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
           {image ? (
             <>
-              <Image
+              <ImageContainer
                 src={`${image}.png`}
                 className="dark:hidden h-[156px] md:h-[278px] w-full rounded-md"
                 height={312}
-                loader={myLoader}
                 width={556}
                 alt=""
               />
-              <Image
+              <ImageContainer
                 src={`${image}-dark.png`}
                 className="hidden dark:block h-[156px] md:h-[278px] w-full rounded-md"
                 height={312}
                 width={556}
-                loader={myLoader}
                 alt=""
               />
             </>

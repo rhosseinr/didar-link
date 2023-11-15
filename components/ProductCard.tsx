@@ -1,8 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
-import myLoader from "@/config/Loader";
+import ImageContainer from "./ImageWrapper";
 
 export const ProductCard = ({ item, onItemClick }: any) => {
   return (
@@ -16,11 +15,10 @@ export const ProductCard = ({ item, onItemClick }: any) => {
         <p className="text-sm">{item.shortDescription}</p>
       </motion.div>
       <figure>
-        <Image
+        <ImageContainer
           alt={item.title}
           className="object-cover rounded-xl"
           src={item.image}
-          loader={myLoader}
           width={200}
           height={200}
         />

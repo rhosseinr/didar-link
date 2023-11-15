@@ -1,17 +1,15 @@
 "use client";
 
-import Image from "next/image";
 import SectionTemplate from "./SectionTemplate";
-import myLoader from "@/config/Loader";
+import ImageContainer from "./ImageWrapper";
 
 export const Target = () => {
   return (
     <SectionTemplate title="اهداف دیدار لینک" color="level2">
-      <Image
+      <ImageContainer
         src="/images/target.png"
         alt="logo"
         width={256}
-        loader={myLoader}
         height={256}
         className="mx-auto h-64 w-64"
       />

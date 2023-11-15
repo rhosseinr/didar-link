@@ -1,6 +1,5 @@
-import myLoader from "@/config/Loader";
 import { useTheme } from "next-themes";
-import Image from "next/image";
+import ImageContainer from "./ImageWrapper";
 const ThemeChanger = () => {
   const { theme, setTheme } = useTheme();
 
@@ -10,20 +9,18 @@ const ThemeChanger = () => {
 
   return (
     <button onClick={changeTheme}>
-      <Image
+      <ImageContainer
         src="/images/moon.svg"
         alt="theme"
         width={24}
         height={24}
-        loader={myLoader}
         className="w-6 h-6 dark:hidden"
       />
-      <Image
+      <ImageContainer
         src="/images/sun.svg"
         alt="theme"
         width={24}
         height={24}
-        loader={myLoader}
         className="hidden dark:block w-6 h-6"
       />
     </button>
