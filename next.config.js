@@ -7,7 +7,7 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
   output: "export",
-  basePath: "/new-landing",
+  basePath: "/didar-link",
 };
 
 module.exports = nextConfig;
