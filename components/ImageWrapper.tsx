@@ -6,7 +6,7 @@ import myLoader from "@/config/Loader";
 const ImageContainer = ({ src, alt, width, height, className }: any) => {
   return (
     <Image
-      src={`/didar-link/${src}`}
+      src={src}
       alt={alt}
       width={width}
       loader={myLoader}

@@ -19,12 +19,12 @@
 }
 
 [data-theme="light"] {
-  background: url("/didar-link/background/5.svg");
+  background: url("/background/5.svg");
   background-color: #e5e5e5;
 }
 
 [data-theme="dark"] {
-  background: url("/didar-link/background/5-dark.svg");
+  background: url("/background/5-dark.svg");
   background-color: #0a0a0a;
 }
 
@@ -59,22 +59,22 @@
 }
 
 .svg-bg-1 {
-  background: url("/didar-link/background/1.svg");
+  background: url("/background/1.svg");
   z-index: 10;
 }
 
 .svg-bg-2 {
-  background: url("/didar-link/background/2.svg");
+  background: url("/background/2.svg");
   z-index: 8;
 }
 
 .svg-bg-3 {
-  background: url("/didar-link/background/3.svg");
+  background: url("/background/3.svg");
   z-index: 6;
 }
 
 .svg-bg-4 {
-  background: url("/didar-link/background/4.svg");
+  background: url("/background/4.svg");
   z-index: 4;
 }
 
@@ -107,21 +107,21 @@
 }
 
 [data-theme="dark"] .svg-bg-1 {
-  background: url("/didar-link/background/1-dark.svg");
+  background: url("/background/1-dark.svg");
   z-index: 10;
 }
 
 [data-theme="dark"] .svg-bg-2 {
-  background: url("/didar-link/background/2-dark.svg");
+  background: url("/background/2-dark.svg");
   z-index: 8;
 }
 
 [data-theme="dark"] .svg-bg-3 {
-  background: url("/didar-link/background/3-dark.svg");
+  background: url("/background/3-dark.svg");
   z-index: 6;
 }
 
 [data-theme="dark"] .svg-bg-4 {
-  background: url("/didar-link/background/4-dark.svg");
+  background: url("/background/4-dark.svg");
   z-index: 4;
 }
